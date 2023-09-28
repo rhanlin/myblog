@@ -1,7 +1,8 @@
 baseURL: "/"
-title: Rhan0 blog
+title: 屎來則靈
 theme: paper-mod
 
+copyright: Rhan0
 defaultContentLanguage: zh-tw
 enableInlineShortcodes: true
 enableRobotsTXT: true
