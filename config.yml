@@ -1,5 +1,5 @@
 baseURL: "/"
-title: 前端小筆
+title: 阿翰前端小筆
 theme: paper-mod
 
 copyright: Rhan0
@@ -33,9 +33,9 @@ params:
     ShowCodeCopyButtons: true
 
     homeInfoParams:
-        Title: "Hi there \U0001F44B"
+        Title: "你好 \U0001F44B 歡迎來到阿翰的筆記"
         Content: >
-            Welcome to my blog !
+            寫下開發過程的筆記，幫助自己在學習的路上留下痕跡
 
     socialIcons:
         - name: github
