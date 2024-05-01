@@ -4,7 +4,7 @@ description = "不同專案使用不同的 NodeJS 版本，如何讓切換版本
 date = 2023-09-27 20:00:00
 author = "Rhan0"
 tags=["nodeJS"]
-weight= 2
+weight= 3
 +++
 
 ## 前言

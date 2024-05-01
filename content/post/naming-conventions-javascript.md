@@ -1,3 +1,11 @@
++++
+title = "JavaScript Naming Conventions"
+description = ""
+date = 2023-09-27 20:00:00
+author = "Rhan0"
+tags=["conventions"]
+weight= 2
++++
 
 ## 變數的命名 (for Variables)
 
@@ -148,9 +156,6 @@ function Dog(){
 2. 如果全域 JavaScript 變數是可變的，則以 camelCase 命名
 3. 如果全域 JavaScript 變數是不可變的，則用 UPPERCASE 命名
 
-## 檔案的命名 (for File Names)
-// TODO:
-
 ## 錯誤情境需要有效管理
 
 1. add unhandledrejection event to capture unhandled promise
@@ -176,7 +181,7 @@ function createScript(src) {
 ```javascript
 // ❌
 function loadScript() {
-  return createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+  return createScript('https://xxx/axios.min.js')
     .then(() => {
       console.log('axios loaded')
     })
@@ -184,13 +189,13 @@ function loadScript() {
 
 // ❌
 async function loadScript() {
-  await createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+  await createScript('https://xxx/axios.min.js')
   console.log('axios loaded')
 }
 
 // ✅
 function loadScript() {
-  return createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+  return createScript('https://xxx/axios.min.js')
     .then(() => {
       console.log('axios loaded')
     })
@@ -202,7 +207,7 @@ function loadScript() {
 // ✅
 async function loadScript() {
   try {
-    await createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+    await createScript('https://xxx/axios.min.js')
     console.log('axios loaded')
   } catch (error) {
     console.error(error)

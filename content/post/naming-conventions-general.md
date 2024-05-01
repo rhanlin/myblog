@@ -1,3 +1,11 @@
++++
+title = "General Naming Conventions"
+description = ""
+date = 2023-09-27 20:00:00
+author = "Rhan0"
+tags=["conventions"]
+weight= 2
++++
 
 ## 淺而易懂的命名 (Use Intention-Revealing Names)
 如果一個命名，還需要註解來解釋它，就代表還不夠清楚
@@ -24,9 +32,9 @@ var event = 'event'
   2. 避免贅字
   3. 避免兩個命名太相像
 
-## 可以被發音 (Use Pronounceable Names)
-使用可以發音的命名可以幫助溝通
-
 ## 可以被搜尋 (Use Searchable Names)
   1. 避免用數字與單一字母命名，可改採用 Constant 或 Enum 賦予意義
   2. longer names比shorter names好，至少搜尋容易定位
+
+## 可以被發音 (Use Pronounceable Names)
+  使用可以發音的命名可以幫助溝通

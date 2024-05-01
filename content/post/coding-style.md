@@ -1,4 +1,12 @@
-Singleton 的寫法
++++
+title = "Coding style"
+description = ""
+date = 2023-09-27 20:00:00
+author = "Rhan0"
+tags=["conventions"]
+weight= 2
++++
+
 ## Singleton 的寫法
 
 ```javascript
@@ -32,17 +40,19 @@ class AnimalManager {
 export default AnimalManager
 ```
 
-## if 的寫法，Whitch is better?
+## if 的寫法
+
 ```javascript
-// a.
+// Good
 if (dog) {
+  doSomething()
   create(dog)
 }
 
-// b.
+// Good
 if (dog) create(dog)
 
-// c.
+// Bad
 dog && create(dog)
 ```
 
@@ -62,6 +72,7 @@ class Dog {
   }
 
   set dogName(name) {
+    // Not doing anything else. 
     this.#dogname = name
   }
 }
