@@ -1,11 +1,3 @@
-+++
-title = "命名原則-JavaScript"
-description = ""
-date = 2023-09-28 08:00:00
-author = "Rhan0"
-tags=["conventions"]
-weight= 2
-+++
 
 ## 變數的命名 (for Variables)
 
@@ -158,3 +150,72 @@ function Dog(){
 
 ## 檔案的命名 (for File Names)
 // TODO:
+
+## 錯誤情境需要有效管理
+
+1. add unhandledrejection event to capture unhandled promise
+2. fill all reject message for useful tracing
+
+```javascript
+function createScript(src) {
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src = src
+    script.onload = () => {
+      resolve()
+    }
+    script.onerror = () => {
+      reject(new Error('load script error'))
+    }
+  })
+}
+```
+
+使用 promise 時，一定要記得 catch，否則 sentry 上會收到 unhandled promise rejection
+
+```javascript
+// ❌
+function loadScript() {
+  return createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+    .then(() => {
+      console.log('axios loaded')
+    })
+}
+
+// ❌
+async function loadScript() {
+  await createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+  console.log('axios loaded')
+}
+
+// ✅
+function loadScript() {
+  return createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+    .then(() => {
+      console.log('axios loaded')
+    })
+    .catch((error) => {
+      console.error(error)
+    })
+}
+
+// ✅
+async function loadScript() {
+  try {
+    await createScript('https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js')
+    console.log('axios loaded')
+  } catch (error) {
+    console.error(error)
+  }
+}
+```
+
+reject 一定要帶值，否則 sentry 上會收到 undefined promise rejection
+```javascript
+// ❌
+reject()
+// ✅
+reject(new Error('error message'))
+// ✅
+reject('error message')
+```

@@ -1,14 +1,5 @@
-+++
-title = "命名原則-General"
-description = ""
-date = 2023-09-27 22:00:00
-author = "Rhan0"
-tags=["conventions"]
-weight= 2
-+++
 
 ## 淺而易懂的命名 (Use Intention-Revealing Names)
-
 如果一個命名，還需要註解來解釋它，就代表還不夠清楚
 
 ```javascript
