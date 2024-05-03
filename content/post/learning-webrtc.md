@@ -68,10 +68,7 @@ P2P的溝通方式為，各自先連線到 server 確認彼此連線後，client
 ## MediaStream API
 
 ### 1. getUserMedia( )
-
-*實作一
-
-問題：有新舊瀏覽器相容性問題要處理，官方推薦使用 [adapter.js](https://github.com/webrtc/adapter) 
+[實作一: 取得用戶裝置](https://codepen.io/rhanlin/pen/WNWqXGg)
 
 ### 2. MediaStream Object
 
@@ -95,7 +92,7 @@ P2P的溝通方式為，各自先連線到 server 確認彼此連線後，client
 
 圖片擷取自: [medium](https://medium.com/@jaysee.zhang/webrtc-for-dummies-395e07c90562)
 
-*實作二: peerA 單方面傳送媒體到 peerB
+[實作二: PeerA 單方面傳送媒體到 PeerB](https://codepen.io/rhanlin/pen/PogrOmQ)
 
 ### **Event handlers / methods**
 
