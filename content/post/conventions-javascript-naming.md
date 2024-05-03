@@ -1,5 +1,5 @@
 +++
-title = "JavaScript Naming Conventions"
+title = "Conventions: JavaScript Naming"
 description = ""
 date = 2023-09-27 20:00:00
 author = "Rhan0"

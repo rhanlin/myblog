@@ -1,5 +1,5 @@
 +++
-title = "Coding style"
+title = "Conventions: Coding style"
 description = ""
 date = 2023-09-27 20:00:00
 author = "Rhan0"

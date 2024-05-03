@@ -1,5 +1,5 @@
 +++
-title = "General Naming Conventions"
+title = "Conventions: General Naming"
 description = ""
 date = 2023-09-27 20:00:00
 author = "Rhan0"
