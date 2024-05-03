@@ -18,17 +18,15 @@ WebRTC (Web Real-Time Communication) 是一個支援網頁瀏覽器進行即時�
 點對點連線，意指用戶端(client)電腦之間能夠互相交換資料，無需透過主機端(server)來處理各用戶端的資料傳輸。
 
 一般來說，我們最熟悉的網路溝通模式(HTTP超文本傳輸協定)如下圖：
-
-<img width="527" alt="webrtc-1" src="https://github.com/rhanlin/myblog/assets/54620681/9f7d09b0-3023-428c-bbfe-74fe6cc0b396">
+![webrtc-1](https://github.com/rhanlin/myblog/assets/54620681/9f7d09b0-3023-428c-bbfe-74fe6cc0b396)
 
 P2P的溝通方式為，各自先連線到 server 確認彼此連線後，client A 跟 client B 就能彼此傳輸資料，如下圖：
 
-<img width="507" alt="webrtc-2" src="https://github.com/rhanlin/myblog/assets/54620681/2496bc2e-51d4-44b8-a814-6e9ad421f0a4">
+![webrtc-2](https://github.com/rhanlin/myblog/assets/54620681/2496bc2e-51d4-44b8-a814-6e9ad421f0a4)
 
 ## WebRTC 三種架構 P2P, SFU, MCU
 
-<img width="1401" alt="webrtc-3" src="https://github.com/rhanlin/myblog/assets/54620681/155b797f-2235-4d5d-806a-7b05cb26d8ae">
-
+![webrtc-3](https://github.com/rhanlin/myblog/assets/54620681/155b797f-2235-4d5d-806a-7b05cb26d8ae)
 圖片擷取自: [liveswitch](https://developer.liveswitch.io/liveswitch-server/index.html)
 
 **P2P** 多個終端之間兩兩進行連接，形成一個網狀結構，每一端直接向另一端發送媒體或從另一端接收媒體，隨著參與方數量的增加，會難以管理
