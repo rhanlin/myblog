@@ -3,7 +3,7 @@ title = "元件開發原則: 元件設計五步驟"
 description = ""
 date = 2023-11-10 21:00:00
 author = "Rhan0"
-tags=["principles"]
+tags=["conventions"]
 weight= 2
 +++
 

@@ -3,7 +3,7 @@ title = "元件開發原則: JS Sweetness"
 description = ""
 date = 2023-11-08 21:00:00
 author = "Rhan0"
-tags=["principles"]
+tags=["conventions"]
 weight= 2
 +++
 

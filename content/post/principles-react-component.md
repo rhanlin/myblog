@@ -3,7 +3,7 @@ title = "元件開發原則: React 基礎規範"
 description = ""
 date = 2023-11-05 21:30:00
 author = "Rhan0"
-tags=["principles"]
+tags=["conventions"]
 weight= 2
 +++
 

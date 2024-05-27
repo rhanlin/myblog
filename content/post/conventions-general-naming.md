@@ -1,5 +1,5 @@
 +++
-title = "Conventions: General Naming"
+title = "開發慣例: 通用命名慣例"
 description = ""
 date = 2023-09-27 20:00:00
 author = "Rhan0"

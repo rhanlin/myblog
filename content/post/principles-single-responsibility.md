@@ -3,7 +3,7 @@ title = "元件開發原則: 單一職責原則(Single Responsibility Principle)
 description = ""
 date = 2023-11-09 21:00:00
 author = "Rhan0"
-tags=["principles"]
+tags=["conventions"]
 weight= 2
 +++
 
