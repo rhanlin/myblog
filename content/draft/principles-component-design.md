@@ -20,7 +20,7 @@ weight= 2
 
 - 👉 Programming (遵守單一職責原則 (SRP))
 
-    > [單一職責原則 (Single Responsibility Principle)](https://rhanlin.github.io/myblog/post/principles-single-responsibility)
+    > [單一職責原則 (Single Responsibility Principle)]({{ .Site.BaseURL }}post/principles-single-responsibility)
     
 - 👉 CSS (依照 selectors 區分)
 - 👉 Design (依照設計圖分層區分)
@@ -45,5 +45,5 @@ weight= 2
 
 
 ## 參考規範
-- [基礎規範](https://rhanlin.github.io/myblog/post/principles-react-component)
-- [JS Sweetness](https://rhanlin.github.io/myblog/post/principles-js-sweetness)
+- [基礎規範]({{ .Site.BaseURL }}post/principles-react-component)
+- [JS Sweetness]({{ .Site.BaseURL }}post/principles-js-sweetness)

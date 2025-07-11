@@ -18,15 +18,15 @@ WebRTC (Web Real-Time Communication) 是一個支援網頁瀏覽器進行即時�
 點對點連線，意指用戶端(client)電腦之間能夠互相交換資料，無需透過主機端(server)來處理各用戶端的資料傳輸。
 
 一般來說，我們最熟悉的網路溝通模式(HTTP超文本傳輸協定)如下圖：
-![webrtc-1](https://github.com/rhanlin/myblog/assets/54620681/9f7d09b0-3023-428c-bbfe-74fe6cc0b396)
+![webrtc-1]({{ .Site.BaseURL }}images/webrtc-1.png)
 
 P2P的溝通方式為，各自先連線到 server 確認彼此連線後，client A 跟 client B 就能彼此傳輸資料，如下圖：
 
-![webrtc-2](https://github.com/rhanlin/myblog/assets/54620681/2496bc2e-51d4-44b8-a814-6e9ad421f0a4)
+![webrtc-2]({{ .Site.BaseURL }}images/webrtc-2.png)
 
 ## WebRTC 三種架構 P2P, SFU, MCU
 
-![webrtc-3](https://github.com/rhanlin/myblog/assets/54620681/155b797f-2235-4d5d-806a-7b05cb26d8ae)
+![webrtc-3]({{ .Site.BaseURL }}images/webrtc-3.png)
 圖片擷取自: [liveswitch](https://developer.liveswitch.io/liveswitch-server/index.html)
 
 **P2P** 多個終端之間兩兩進行連接，形成一個網狀結構，每一端直接向另一端發送媒體或從另一端接收媒體，隨著參與方數量的增加，會難以管理
@@ -86,7 +86,7 @@ P2P的溝通方式為，各自先連線到 server 確認彼此連線後，client
 
 ## **RTCPeerConnection 實作 P2P**
 
-![webrtc-5](https://github.com/rhanlin/myblog/assets/54620681/42d32e3e-e7e4-447b-bd5b-2f2ca4a3acf2)
+![webrtc-5]({{ .Site.BaseURL }}images/webrtc-5.png)
 
 圖片擷取自: [medium](https://medium.com/@jaysee.zhang/webrtc-for-dummies-395e07c90562)
 
@@ -109,7 +109,7 @@ pc.ontrack = (e) => {};
 - oniceconnectionstatechange: 每次 ICE 連切狀態變化時，都會向對方發送此事件，常用在需要觸發 ICE 重啟時(failed)
 - ontrack: 完成連線後，透過該事件能夠在遠端傳輸多媒體檔案時觸發，並處理接收
 - 延伸 ICE (STUN/TURN): 是為了解決網路 [NAT](https://en.wikipedia.org/wiki/Network_address_translation) 的複雜性，ICE 會嘗試找到連接對方的最佳途徑
-![webrtc-4](https://github.com/rhanlin/myblog/assets/54620681/257c5f87-a93b-4ea8-a96c-744ae1fcefba)
+![webrtc-4]({{ .Site.BaseURL }}images/webrtc-4.png)
 
 
 1. 加入多媒體數據：add MediaStreams

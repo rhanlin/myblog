@@ -1,4 +1,4 @@
-baseURL: {{ .Site.BaseURL | default "/" }}
+baseURL: "/"
 title: 前端小筆 - console.log(人生)
 theme: paper-mod
 
@@ -41,9 +41,3 @@ params:
           url: "https://github.com/rhanlin"
     assets:
         disableHLJS: true
-
-languages:
-  zh-tw:
-    weight: 1
-    languageName: "繁體中文"
-    contentDir: "content/zh-tw"
