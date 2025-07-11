@@ -40,8 +40,6 @@ params:
         Title: "console.log(人生)"
         Content: >
             人生 Debug 中。這裡寫些開發心得、生活感想，還有生活裡不務正業的瞬間。（功能尚未全數實作完畢）。
-    socialIcons:
-        - name: github
-          url: "https://github.com/rhanlin"
+
     assets:
         disableHLJS: true
