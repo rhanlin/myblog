@@ -18,10 +18,63 @@ weight= 2
 工廠模式的核心概念是將物件的建立邏輯從直接的 `new` 呼叫中抽離出來，委託給一個專門的「工廠」來負責。這樣做的主要目的是降低耦合、提高彈性。
 
 工廠模式有多種變體：
-- **簡單工廠**：一個工廠類別負責建立多種產品
-- **工廠方法**：每個產品都有自己的工廠
-- **抽象工廠**：建立相關產品族
-- **靜態工廠方法**：本文重點討論的模式
+
+#### **簡單工廠**：一個工廠類別負責建立多種產品
+```typescript
+class VehicleFactory {
+    static create(type: 'car' | 'bike'): Vehicle {
+        switch (type) {
+            case 'car': return new Car();
+            case 'bike': return new Bike();
+            default: throw new Error('Unknown vehicle type');
+        }
+    }
+}
+```
+
+#### **工廠方法**：每個產品都有自己的工廠
+```typescript
+interface VehicleFactory {
+    create(): Vehicle;
+}
+
+class CarFactory implements VehicleFactory {
+    create(): Vehicle { return new Car(); }
+}
+
+class BikeFactory implements VehicleFactory {
+    create(): Vehicle { return new Bike(); }
+}
+```
+
+#### **抽象工廠**：建立相關產品族
+```typescript
+interface UIFactory {
+    createButton(): Button;
+    createInput(): Input;
+}
+
+class MaterialUIFactory implements UIFactory {
+    createButton(): Button { return new MaterialButton(); }
+    createInput(): Input { return new MaterialInput(); }
+}
+
+class BootstrapUIFactory implements UIFactory {
+    createButton(): Button { return new BootstrapButton(); }
+    createInput(): Input { return new BootstrapInput(); }
+}
+```
+
+#### **靜態工廠方法**：本文重點討論的模式
+```typescript
+class User {
+    private constructor(private name: string) {}
+    
+    static create(name: string): User {
+        return new User(name);
+    }
+}
+```
 
 ## 靜態工廠方法詳解
 
