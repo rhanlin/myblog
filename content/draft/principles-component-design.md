@@ -20,7 +20,7 @@ weight= 2
 
 - 👉 Programming (遵守單一職責原則 (SRP))
 
-    > [單一職責原則 (Single Responsibility Principle)]({{< ref "post/principles-single-responsibility" >}})
+    > [單一職責原則 (Single Responsibility Principle)]({{< ref "draft/principles-single-responsibility" >}})
     
 - 👉 CSS (依照 selectors 區分)
 - 👉 Design (依照設計圖分層區分)
