@@ -1,7 +1,7 @@
 +++
 title = "開發慣例: 通用命名慣例"
 description = ""
-date = 2023-09-27 20:00:00
+date = 2025-01-27 20:00:00
 author = "Rhan0"
 tags=["conventions"]
 weight= 2

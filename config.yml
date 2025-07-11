@@ -1,5 +1,5 @@
-baseURL: "/"
-title: 前端小筆
+baseURL: {{ .Site.BaseURL | default "/" }}
+title: 前端小筆 - console.log(人生)
 theme: paper-mod
 
 copyright: Rhan0
@@ -22,24 +22,28 @@ outputs:
         - JSON
 
 params:
-    env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    description: "My description"
     author: Rhan0
+    env: production # to enable google analytics, opengraph, twitter-cards and schema.
+    description: "人生 Debug 中。這裡寫些開發心得、生活感想，還有生活裡不務正業的瞬間。"
     mainSections: ["post"]
     defaultTheme: auto
     ShowReadingTime: true
     ShowPostNavLinks: true
     ShowBreadCrumbs: true
     ShowCodeCopyButtons: true
-
+    ShowShareButtons: true
     homeInfoParams:
-        Title: "阿翰的筆記"
+        Title: "console.log(人生)"
         Content: >
-            寫下開發過程的筆記，幫助自己在學習的路上留下痕跡
-
+            人生 Debug 中。這裡寫些開發心得、生活感想，還有生活裡不務正業的瞬間。（功能尚未全數實作完畢）。
     socialIcons:
         - name: github
           url: "https://github.com/rhanlin"
-
     assets:
         disableHLJS: true
+
+languages:
+  zh-tw:
+    weight: 1
+    languageName: "繁體中文"
+    contentDir: "content/zh-tw"
