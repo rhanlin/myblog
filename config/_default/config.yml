@@ -9,6 +9,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 enableEmoji: true
+timeZone: Asia/Taipei
 markup:
   goldmark:
     renderer:
