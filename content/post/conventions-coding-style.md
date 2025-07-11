@@ -1,7 +1,7 @@
 +++
 title = "開發慣例: Coding style"
 description = ""
-date = 2023-09-27 20:00:00
+date = 2025-01-27 20:00:00
 author = "Rhan0"
 tags=["conventions"]
 weight= 2
@@ -38,6 +38,20 @@ class AnimalManager {
 }
 
 export default AnimalManager
+
+
+// typescript 可以用靜態工廠模式 (Static Factory Pattern) 
+class AnimalManager {
+    private static instance: AnimalManager;
+    
+    public static getInstance(): AnimalManager {
+        if (!AnimalManager.instance) {
+            AnimalManager.instance = new AnimalManager();
+        }
+        return AnimalManager.instance;
+    }
+}
+
 ```
 
 ## if 的寫法

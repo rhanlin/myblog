@@ -134,7 +134,7 @@ const getRoutes = (type, name, subRoute) => {
   }
 };
 
-// ✅ 特殊規格獨立模組化，依照複雜度決定做成 funtion/class
+// ✅ 特殊規格獨立模組化，依照複雜度決定做成 function/class
 const getTheARoutes = (name, subRoute) => {
   if (subRoute === 'project') {
     return name === 'Gary' ? `/${subRoute}/detail/${name}` : '/detail';
