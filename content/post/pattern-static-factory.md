@@ -227,6 +227,8 @@ class ConfigManager {
 
 ## 實際案例：圖片載入器重構
 
+完整範例 👉 [github repo](https://github.com/rhanlin/example-static-factory-pattern?tab=readme-ov-file)
+
 ### 重構前的問題
 
 ```typescript
