@@ -1,6 +1,6 @@
 +++
-title = "資料結構與演算法 01"
-description = "交大資訊工程學系 彭文志老師 演算法課程筆記"
+title = "資料結構 01"
+description = "交大資訊工程學系 彭文志老師 資料結構課程筆記"
 date = 2026-02-23 12:00:00
 author = "Rhan0"
 tags=["algorithm"]
