@@ -266,7 +266,7 @@ function factorial(n) {
 
 ### Recursive Multiplication（遞迴乘法）
 
-計算 `a × b` 可遞迴為 `a + (a × (b-1))`，直到 `b = 0` 為止。
+計算 `a × b` 可遞迴為 `a × (b-1) + a`，直到 `b = 1` 為止。
 
 **運作方式：** 以 `5 × 3` 為例：
 
@@ -282,10 +282,40 @@ function factorial(n) {
 // Time Complexity: O(b)
 // Space Complexity: O(b)
 function multiply(a, b) {
-  if (b === 0) {
-    return 0;
+  if (b === 1) {
+    return a;
   }
   return a + multiply(a, b - 1);
+}
+```
+
+### Recursive Summation（遞迴加總）
+
+計算 `1 + 2 + ... + n` 可遞迴為 `n + (1 + 2 + ... + (n-1))`，直到 `n = 1` 為止。
+sum(1, n) = sum(1, n-1) + n
+
+```javascript
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+function sum(n) {
+  if (n === 1) {
+    return 1;
+  }
+  return sum(n - 1) + n;
+}
+```
+
+用 for loop 實作 👍：
+
+```javascript
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+function sum(n) {
+  let result = 0;
+  for (let i = 1; i <= n; i++) {
+    result += i;
+  }
+  return result;
 }
 ```
 
